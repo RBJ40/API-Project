@@ -3,7 +3,7 @@ import "./style.css";
 //shows data
 async function getData() {
   try {
-    const response = await fetch("https://api.coinlore.net/api/global/"); //fetch returns promise/ paste api link as string in quotation marks
+    const response = await fetch("https://maldatabase.com/api-doc.html"); //fetch returns promise/ paste api link as string in quotation marks
     //guard clause
     if (response.status != 200) {
       throw new Error(response);
