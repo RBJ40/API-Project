@@ -3,7 +3,9 @@ import "./style.css";
 //shows data
 async function getData() {
   try {
-    const response = await fetch("https://maldatabase.com/api-doc.html"); //fetch returns promise/ paste api link as string in quotation marks
+    const response = await fetch(
+      "https://boardgamegeek.com/wiki/page/BGG_XML_API2"
+    ); //fetch returns promise paste api link as string in quotation marks
     //guard clause
     if (response.status != 200) {
       throw new Error(response);
