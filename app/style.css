@@ -6,4 +6,5 @@ html, body{
     display: flex;
     font-size: 10px;
     flex-wrap: wrap;
+    background-color: beige;
 }
