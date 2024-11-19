@@ -8,3 +8,6 @@ html, body{
     flex-wrap: wrap;
     background-color: beige;
 }
+.text-3xl font-bold text-center mb-4{
+    text-align: center;
+}

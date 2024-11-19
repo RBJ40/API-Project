@@ -1,15 +1,11 @@
 import "./style.css";
 //gets data
 //shows data
-const URL = "https://suredbits.com/api/#historical-prices-data-api";
+const URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
+
 async function getData(URL) {
-  button.addEventListener("click", function () {
-    //placeholder
-  });
   try {
-    const response = await fetch(
-      "https://suredbits.com/api/#historical-prices-data-api"
-    ); //fetch returns promise paste api link as string in quotation marks
+    const response = await fetch(URL); //fetch returns promise paste api link as string in quotation marks
     //guard clause
     if (response.status != 200) {
       throw new Error(response);
@@ -22,4 +18,8 @@ async function getData(URL) {
     alert("Sorry. Could not find data requested.");
   }
 }
-getData();
+getData(URL);
+
+button.addEventListener("click", function () {
+  //placeholder
+});
