@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-    display: flex;
-    font-size: 10px;
-    flex-wrap: wrap;
-    background-color: beige;
+html,
+body {
+  display: flex;
+  font-size: 10px;
+  flex-wrap: wrap;
+  background-color: beige;
 }
-.text-3xl font-bold text-center mb-4{
-    text-align: center;
+.text-3xl font-bold text-center mb-4 {
+  text-align: center;
+}
+.btn {
+  display: inline-flex;
+  height: 3rem;
+  min-height: 3rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded-btn, 0.5rem);
 }

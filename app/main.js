@@ -20,6 +20,12 @@ async function getData(URL) {
 }
 getData(URL);
 
+function createCards(data) {
+  data.forEach((data) => {
+    console.log(data);
+  });
+}
+createCards(data);
 button.addEventListener("click", function () {
   //placeholder
 });
