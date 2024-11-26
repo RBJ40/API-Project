@@ -29,4 +29,6 @@ createCards(data);
 button.addEventListener("click", function () {
   //placeholder
 });
-async function getDatat(URL) {}
+async function displayData(URL) {
+  //placeholder. card information in this function
+}
