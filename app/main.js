@@ -22,6 +22,10 @@ getData(URL);
 
 function createCards(data) {
   data.forEach((data) => {
+    container
+      .insertAdjacentHTML
+      //placeholder
+      ();
     console.log(data);
   });
 }
