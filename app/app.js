@@ -23,8 +23,7 @@ getData(URL);
 function createCards(data) {
   const container = document.querySelector(".container");
   data.forEach((data) => {
-    container.insertAdjacentHTML;
-    "beforeend", `<div class="card"></div>`;
+    container.insertAdjacentHTML('beforeend', `<div class="card"></div>`)
     const container = document.querySelector(".container");
     console.log(data);
   });
