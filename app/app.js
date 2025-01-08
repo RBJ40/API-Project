@@ -32,14 +32,7 @@ function createCards(data) {
 
 createCards(data);
 
-document.getElementById("search").addEventListener("click", function () {
-  const thing = document.getElementById("searchBar").value;
-  if (thing) {
-    displayData(thing);
-  } else {
-    alert("Not found");
-  }
-});
+
 function displayData() {
   return `
   <h2>Name: ${data.name}</h2>;
