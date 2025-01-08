@@ -32,6 +32,12 @@ function createCards(data) {
 
 createCards(data);
 
+document.getElementById("search").addEventListener("click", function () {
+  const thing = document.getElementById("searchBar").value;
+  data.forEach((card) => {
+    if (thing === card.name) { container.insertAdjacentHTML('beforeend', `<div class="card"></div>`) };
+  })
+  });
 
 function displayData() {
   return `
