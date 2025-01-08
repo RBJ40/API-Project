@@ -38,10 +38,10 @@ createCards(data);
 document.getElementById("search").addEventListener("click", function () {
   const thing = document.getElementById("searchBar").value;
   data.forEach((card) => {
-    if (thing === card.name) {
+    if (thing === card.name && thing === yugi[data-name]) {
       container.insertAdjacentHTML(
         "beforeend",
-        `<div class="card" data-name = "${result.name}"><div/>>
+        `<div class="card" data-name = "${data.name}"><div/>
         <h2>Name: ${data.name}</h2>;
         <p>Card type: ${data.type}</p>;</div>
       `
