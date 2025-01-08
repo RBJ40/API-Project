@@ -3,6 +3,8 @@ import "./style.css";
 //shows data
 const URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
 
+const yugi = document.querySelector(".card");
+
 async function getData(URL) {
   try {
     const response = await fetch(URL); //fetch returns promise paste api link as string in quotation marks
@@ -39,7 +41,7 @@ document.getElementById("search").addEventListener("click", function () {
     if (thing === card.name) {
       container.insertAdjacentHTML(
         "beforeend",
-        `<div class="card">
+        `<div class="card" data-name = "${result.name}"><div/>>
         <h2>Name: ${data.name}</h2>;
         <p>Card type: ${data.type}</p>;</div>
       `
@@ -53,3 +55,4 @@ function displayData() {
   <p>Card type: ${data.type}</p>;`;
 }
 displayData();
+
