@@ -20,30 +20,30 @@ async function getData(URL) {
 }
 getData(URL);
 
-try {
-  const response = await fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php");
-  if (response.status != 200) {
-    throw new Error(response);
-  } else {
-    const data = await response.json();
-    document.querySelector("h2").textContent = data.name;
-  }
-} catch (error) {
-  console.log(error);
-  alert("Sorry. Could not find data requested.");
-}
-
 function createCards(data) {
+  const container = document.querySelector(".container");
   data.forEach((data) => {
     container.insertAdjacentHTML;
-    "beforeend"();
+    "beforeend", `<div class="card"></div>`;
+    const container = document.querySelector(".container");
     console.log(data);
   });
+  container.appendChild(div);
 }
+
 createCards(data);
-button.addEventListener("click", function () {
-  //placeholder
+
+document.getElementById("search").addEventListener("click", function () {
+  const thing = document.getElementById("searchBar").value;
+  if (thing) {
+    displayData(thing);
+  } else {
+    alert("Not found");
+  }
 });
-async function displayData(URL) {
-  //placeholder. card information in this function
+
+function displayData(URL) {
+  <h2>Name: {$data.name}</h2>;
+  <p>Card type: {$data.type}</p>;
 }
+displayData();
