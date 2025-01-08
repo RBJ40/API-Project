@@ -41,9 +41,9 @@ document.getElementById("search").addEventListener("click", function () {
     alert("Not found");
   }
 });
-
 function displayData() {
+  return `
   <h2>Name: ${data.name}</h2>;
-  <p>Card type: ${data.type}</p>;
+  <p>Card type: ${data.type}</p>;`;
 }
 displayData();
