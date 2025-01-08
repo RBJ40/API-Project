@@ -49,10 +49,5 @@ document.getElementById("search").addEventListener("click", function () {
     }
   });
 });
-function displayData() {
-  return `
-  <h2>Name: ${data.name}</h2>;
-  <p>Card type: ${data.type}</p>;`;
-}
-displayData();
+
 
