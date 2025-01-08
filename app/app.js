@@ -23,7 +23,8 @@ getData(URL);
 function createCards(data) {
   const container = document.querySelector(".container");
   data.forEach((data) => {
-    container.insertAdjacentHTML('beforeend', `<div class="card"></div>`)
+    container.insertAdjacentHTML;
+    "beforeend", `<div class="card"></div>`;
     const container = document.querySelector(".container");
     console.log(data);
   });
@@ -35,10 +36,17 @@ createCards(data);
 document.getElementById("search").addEventListener("click", function () {
   const thing = document.getElementById("searchBar").value;
   data.forEach((card) => {
-    if (thing === card.name) { container.insertAdjacentHTML('beforeend', `<div class="card"></div>`) };
-  })
+    if (thing === card.name) {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
+        <h2>Name: ${data.name}</h2>;
+        <p>Card type: ${data.type}</p>;</div>
+      `
+      );
+    }
   });
-
+});
 function displayData() {
   return `
   <h2>Name: ${data.name}</h2>;
